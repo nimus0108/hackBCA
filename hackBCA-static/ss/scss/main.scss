@@ -225,7 +225,7 @@ input[type="email"],
 	border: none;
 	outline: none;
 	color: #FFFFFF;
-	background-color: #8BDA48;
+	background-color: #000000;
 	height: 50px;
 	padding-top: auto;
 	padding-bottom: auto;
@@ -233,6 +233,7 @@ input[type="email"],
 	line-height: normal;
 	padding-left: 24px;
 	padding-right: 24px;
+	border: 2px solid #FFFFFF;
 	@include transition(all,
 	ease-in-out,
 	0.4s);
@@ -240,8 +241,9 @@ input[type="email"],
 		outline: none;
 	}
 	&:hover {
-		background-color: #FFFFFF;
-		color: #000000;
+		background-color: #8BDA48;
+		color: #ffffff;
+		border: 2px solid #8BDA48;
 	}
 }
 
