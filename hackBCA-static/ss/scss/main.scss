@@ -280,10 +280,23 @@ ul {
 
 .icon-set {
 	display: flex;
+	position: relative;
 	padding-left: 56px;
 	padding-right: 56px;
 	height: auto;
 }
+
+// .icon-img{
+//     @include transition(all,
+// 	ease-in-out,
+// 	0.3s);
+
+// 	&:hover {
+// 		margin-top: -5px;
+// 		color: #FFF;
+// 		opacity: 1;
+// 	}
+// }
 
 li {
 	margin: 0;

@@ -226,6 +226,7 @@ ul {
 
 .icon-set {
   display: flex;
+  position: relative;
   padding-left: 56px;
   padding-right: 56px;
   height: auto; }
