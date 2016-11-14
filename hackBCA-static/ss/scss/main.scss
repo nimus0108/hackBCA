@@ -172,10 +172,6 @@ a {
 	0.2);
 }
 
-a:hover {
-	opacity: 0.8;
-}
-
 form {
 	display: block;
 	width: fit-content;
@@ -277,6 +273,10 @@ ul {
 .icon {
 	padding-left: 24px;
 	padding-right: 24px;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .icon-set {
@@ -286,18 +286,6 @@ ul {
 	padding-right: 56px;
 	height: auto;
 }
-
-// .icon-img{
-//     @include transition(all,
-// 	ease-in-out,
-// 	0.3s);
-
-// 	&:hover {
-// 		margin-top: -5px;
-// 		color: #FFF;
-// 		opacity: 1;
-// 	}
-// }
 
 li {
 	margin: 0;
