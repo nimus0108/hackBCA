@@ -316,10 +316,11 @@ ul {
 	padding-left: 24px;
 	padding-right: 24px;
 	opacity: 0.8;
+	@include crossBrowser(transition,
+	all ease-in-out 0.6s);
 	&:hover {
 		opacity: 1;
-		@include crossBrowser(transition,
-		all ease-in-out 0.6s);
+		transform: translateY(-10px);
 	}
 }
 
@@ -383,6 +384,9 @@ li {
 			transform: scale(1);
 			opacity: 1;
 		}
+	}
+	.icon:hover {
+		transform: none;
 	}
 }
 
