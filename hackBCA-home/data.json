@@ -1,0 +1,35 @@
+{
+	"guests": [{
+		"name": "Tom Lehman"
+		, "description": "CEO and Co-founder of Genius"
+		, "role": "Emcee"
+	}, {
+		"name": "Chris Wanstrath"
+		, "description": "CEO of Github"
+		, "role": "Speaker"
+	}, {
+		"name": "Josh Bancroft"
+		, "description": "Dev relations @Intel"
+		, "role": "Judge"
+	}]
+	, "faq": [{
+		"question": ""
+		, "answer": ""
+	}, {
+		"question": ""
+		, "answer": ""
+	}, {
+		"question": ""
+		, "answer": ""
+	}, {
+		"question": ""
+		, "answer": ""
+	}, {
+		"question": ""
+		, "answer": ""
+	}, {
+		"question": ""
+		, "answer": ""
+	}],
+	"sponsors": []
+}
