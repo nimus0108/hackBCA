@@ -21,6 +21,7 @@ input:focus {
 body {
 	border-left: 10px solid black;
 	margin: 0;
+	padding: 0;
 	width: 100vw;
 	height: 100%;
 }
@@ -33,7 +34,19 @@ figure {
 	width: 100%;
 	min-height: 100vh;
 	position: relative;
-	/*		background-color: lightgray;*/
+	margin: 0;
+	padding: 0;
+}
+
+time {
+	color: white;
+	font-size: 10em;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	span:not(:first-of-type):before {
+		content: " : ";
+	}
 }
 
 .jumbo--padding {
@@ -73,7 +86,7 @@ figure {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	margin-top: -10em;
+	transform: translateY(-10em);
 }
 
 .guest {
@@ -166,6 +179,10 @@ figure {
 	font-weight: 300;
 }
 
+.bg-black {
+	background-color: black;
+}
+
 .footer {
 	background-color: black;
 	margin: 0;
@@ -242,11 +259,29 @@ figure {
 }
 
 @include media (800px) {
+	html {
+		font-size: 80%;
+	}
+	
+	#video {
+		width: 100%;
+	}
+	.jumbo--padding {
+		padding: 2em 2em 2em 2em;
+	}
 	.guest {
 		display: block;
-		width: calc(100vw - 12em);
+		width: calc(100vw - 4em);
+		margin-left: auto;
+		margin-right: auto;
 		.guest__portrait {
-			width: calc(100vw - 12em);
+			width: calc(100vw - 4em);
+			height: calc(100vw - 4em);
 		}
+	}
+	.faq {
+		display: block;
+		width: calc(100vw - 4em);
+		height: calc((100vw) * (2/3) - 4em);
 	}
 }
