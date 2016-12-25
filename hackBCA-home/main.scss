@@ -44,9 +44,25 @@ time {
 	text-align: center;
 	display: inline-block;
 	width: 100%;
+	margin: 0;
+	position: relative;
 	span:not(:first-of-type):before {
 		content: " : ";
 	}
+//	span:after {
+//		content: attr(time-type);
+//		font-size: 2rem;
+//		color: white;
+//		display: block;
+//		position: absolute;
+//
+//	}
+//	@for $i from 1 to 4 {
+//		span:nth-of-type(#{$i}):after {
+//			left: calc(#{$i} * 10em - 1em);
+//					margin-bottom: 2em;
+//		}
+//	}
 }
 
 .jumbo--padding {
@@ -81,12 +97,12 @@ time {
 
 #video {
 	width: 80%;
+	height: calc(80% / (16/9));
 	background-color: beige;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	transform: translateY(-10em);
 }
 
 .guest {
@@ -262,7 +278,6 @@ time {
 	html {
 		font-size: 80%;
 	}
-	
 	#video {
 		width: 100%;
 	}
