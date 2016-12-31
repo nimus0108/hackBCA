@@ -1,11 +1,8 @@
 {
-
-	"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim dolor et ante pulvinar, eget euismod tortor tempor. Nulla euismod quam quis lacinia tincidunt. Morbi non nisi leo.",
-
-	"splashImageURL": "",
-	"descImageURL": "",
-
-	"guests": [{
+	"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim dolor et ante pulvinar, eget euismod tortor tempor. Nulla euismod quam quis lacinia tincidunt. Morbi non nisi leo."
+	, "splashImageURL": "http://blogs.intel.com/evangelists/files/2015/04/IMG_5346.jpg"
+	, "descImageURL": ""
+	, "guests": [{
 		"name": "Tom Lehman"
 		, "description": "CEO and Co-founder of Genius"
 		, "role": "Emcee"
@@ -23,7 +20,7 @@
 	}]
 	, "faq": [{
 		"question": "What is a hackathon?"
-		, "answer": "This is an answer"
+		, "answer": ""
 	}, {
 		"question": "Who can attend?"
 		, "answer": ""
