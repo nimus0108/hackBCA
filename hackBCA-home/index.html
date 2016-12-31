@@ -7,6 +7,12 @@
 
 	<title>hackBCA</title>
 
+	<meta name="X-UA-Compatible" content="ie=edge,chrome=1">
+
+	<meta name="mobile-web-app-capable" content="true">
+	<meta name="apple-mobile-web-app-capable" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Basic Metadata-->
 	<meta name="title" content="hackBCA IV — Lighting the Torch">
 	<meta name="description" content="Lighting the Torch">
@@ -30,46 +36,109 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="app.js"></script>
 
-	<link href="main.min.css" rel="stylesheet" type="text/css">
+	<link href="/favicon_64x64.ico" rel="icon" type="icon/x-icon" size="64x64">
+	<link href="/favicon_32x32.ico" rel="icon" type="icon/x-icon" size="32x32">
+
+	<link href="/favicon_64x64.png" rel="icon" type="image/png" size="64x64">
+	<link href="/favicon_32x32.png" rel="icon" type="image/png" size="32x32">
+
+	<link rel="shortcut icon" href="/apple-touch-icon" type="icon/x-icon">
+
+	<link href="main.css" rel="stylesheet" type="text/css">
 
 </head>
-
 
 <body>
 	<section class="jumbo">
 		<figure></figure>
 	</section>
-	<section class="jumbo jumbo--padding flex-container">
+	<section class="jumbo jumbo--padding">
 		<div class="jumbo__statement">
-			<h1 class="jumbo__statement__header">hackBCAIV:<br>Lighting&nbsp;the&nbsp;Torch</h1>
-			<p></p>
+			<hgroup class="jumbo__statement__group">
+				<h1 class="jumbo__statement__header">hackBCAIV:<br>Lighting&nbsp;the&nbsp;Torch</h1>
+				<p class="jumbo__statement__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim dolor et ante pulvinar, eget euismod tortor tempor. Nulla euismod quam quis lacinia tincidunt. Morbi non nisi leo.
+				</p>
+			</hgroup>
 		</div>
-		<figure></figure>
+		<figure class="jumbo__img__container flex-center">
+			<img class="jumbo__img" />
+		</figure>
 	</section>
 	<section class="jumbo bg-black">
 		<video id="video">
 		</video>
-		<time><span time-type="months">02</span><span time-type="days">10</span><span time-type="hours">40</span></time>
+		<time>
+			<!--<span time-type="months">02</span><span time-type="days">10</span><span time-type="hours">40</span>-->
+		</time>
 	</section>
 
-	<!--Loop through json -->
-	<section class="jumbo jumbo--padding ">
+	<section class="jumbo--fit jumbo--padding ">
 		<h1 class="section__header">Guests</h1>
 		<div class="flex-container flex-row-space-between" id="guest__container">
 		</div>
 	</section>
 	<section class="jumbo jumbo--padding ">
 		<h1 class="section__header">FAQ</h1>
-		<div class="flex-container flex-row-space-between" id ="faq__container">
+		<div class="flex-container flex-row-space-between" id="faq__container">
 		</div>
 	</section>
-	<section class="jumbo">
-		<center class="section__header">Sponsors</center>
-		<figure></figure>
-		<center class="section__header">In Partnership with</center>
-		<figure></figure>
+	<section class="jumbo jumbo--padding">
+
+		<h1 class="section__header--center">Sponsors</h1>
+
+		<div class="row row-1">
+			<img src="assets/sponsors/intel.png" />
+		</div>
+
+		<div class="row row-3">
+			<img src="assets/sponsors/roughdraft.png" />
+			<div class="flex-column">
+				<img src="assets/sponsors/boozallen.png" />
+				<img src="assets/sponsors/twilio.png" />
+			</div>
+			<img src="assets/sponsors/goldmansachs.png" />
+		</div>
+
+		<div class="row row-3">
+			<img src="assets/sponsors/janestreet.png" />
+			<img src="assets/sponsors/clouderacares.png" />
+			<img src="assets/sponsors/github.png" />
+		</div>
+		<div class="row row-6">
+			<img src="assets/sponsors/genius.png" />
+			<img src="assets/sponsors/mozilla.png" />
+			<img src="assets/sponsors/ci.png" />
+			<img src="assets/sponsors/dottech.png" />
+			<img src="assets/sponsors/livestream.png" />
+			<img src="assets/sponsors/startupvitamins.png" />
+		</div>
+
+		<div class="row row-4">
+			<img src="assets/sponsors/clarifai.png" />
+			<img src="assets/sponsors/iwe.png" />
+			<img src="assets/sponsors/stickermule.png" />
+			<img src="assets/sponsors/makeschool.png" />
+		</div>
+
+		<div class="row row-2">
+			<img src="assets/sponsors/ugp.png" />
+			<img src="assets/sponsors/hackerfund.png" />
+		</div>
+
+		<h1 class="section__header--center">In Partnership with</h1>
+
+		<div class="row row-2">
+			<img src="assets/sponsors/mlh.png" />
+			<img src="assets/sponsors/atcs.png" />
+		</div>
+
 	</section>
 	<footer class="footer jumbo--padding">
+		<a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank">
+			<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%" />
+		</a>
+
 		<h1 class="footer__statement">hackBCA IV: Lighting the Torch</h1>
 		<div class="footer__contact__container">
 			<div class="footer__contact">
@@ -89,12 +158,16 @@
 		</div>
 		<!-- Float mlh right -->
 		<nav class="footer__nav">
-			<h2 class="footer__header">Reach Us</h2>
-			<a href="mailto:contact@hackbca.com" class="icon"><img src="assets/icons/icon_email.svg"></a>
-			<a href="http://facebook.com/hackBCA" class="icon"><img src="assets/icons/icon_facebook.svg"></a>
-			<a href="http://twitter.com/hackBCA" class="icon"><img src="assets/icons/icon_twitter.svg"></a>
-			<a href="http://github.com/hackbca" class="icon"><img src="assts/icons/icon_github.svg"></a>
-			<small class="footer__copy">&copy; 2016 hackBCA</small>
+			<div class="footer__nav__left">
+				<h2 class="footer__nav__header">Reach Us</h2>
+				<div class="footer__nav__links">
+					<a href="mailto:contact@hackbca.com" class="icon"><img src="assets/icons/icon_email.svg"></a>
+					<a href="http://facebook.com/hackBCA" class="icon"><img src="assets/icons/icon_facebook.svg"></a>
+					<a href="http://twitter.com/hackBCA" class="icon"><img src="assets/icons/icon_twitter.svg"></a>
+					<a href="http://github.com/hackbca" class="icon"><img src="assets/icons/icon_github.svg"></a>
+				</div>
+			</div>
+			<small class="footer__nav__copy">&copy; 2016 hackBCA</small>
 		</nav>
 
 	</footer>

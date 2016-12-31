@@ -1,0 +1,16 @@
+//Mixins
+@mixin crossBrowser($prop, $val) {
+	-webkit-#{$prop}: $val;
+	-moz-#{$prop}: $val;
+	-o-#{$prop}: $val;
+	$prop: $val;
+}
+
+@mixin media ($width) {
+	
+	/* #{$width} */
+	@media screen and (max-width: $width) {
+		@content;
+	}
+	
+}

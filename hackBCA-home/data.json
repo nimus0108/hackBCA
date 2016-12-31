@@ -1,35 +1,37 @@
 {
+
+	"desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dignissim dolor et ante pulvinar, eget euismod tortor tempor. Nulla euismod quam quis lacinia tincidunt. Morbi non nisi leo.",
+
+	"splashImageURL": "",
+	"descImageURL": "",
+
 	"guests": [{
 		"name": "Tom Lehman"
 		, "description": "CEO and Co-founder of Genius"
 		, "role": "Emcee"
+		, "url": "https://pbs.twimg.com/profile_images/646408334749339648/V0h5j8sY.png"
 	}, {
 		"name": "Chris Wanstrath"
 		, "description": "CEO of Github"
 		, "role": "Speaker"
+		, "url": "http://i.forbesimg.com/media/lists/people/chris-wanstrath_416x416.jpg"
 	}, {
 		"name": "Josh Bancroft"
 		, "description": "Dev relations @Intel"
 		, "role": "Judge"
+		, "url": "https://pbs.twimg.com/profile_images/730536217503109121/017Pc2vE.jpg"
 	}]
 	, "faq": [{
-		"question": ""
+		"question": "What is a hackathon?"
+		, "answer": "This is an answer"
+	}, {
+		"question": "Who can attend?"
 		, "answer": ""
 	}, {
-		"question": ""
+		"question": "What should I bring?"
 		, "answer": ""
 	}, {
-		"question": ""
-		, "answer": ""
-	}, {
-		"question": ""
-		, "answer": ""
-	}, {
-		"question": ""
-		, "answer": ""
-	}, {
-		"question": ""
-		, "answer": ""
-	}],
-	"sponsors": []
+		"question": "Can I work alone?"
+		, "answer": "You can work on a project individually or with a team. You can come as a team, or form a team at the event. We will have team formation activities at the beginning of the event for anybody looking for team."
+	}]
 }
