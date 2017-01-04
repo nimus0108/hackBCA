@@ -40,16 +40,12 @@ $(function () {
 
 		var guests = data.guests
 			, desc = data.desc
-			, $splashContainer = $('#splash_img')
-			, splashImage = data.splashImageURL
-			, $desc = $('.jumbo__statement__text')
 			, faq = data.faq
 			, $guests = $('#guest__container')
 			, $faq = $('#faq__container');
 
 		$desc.append(desc);
 
-		$splashContainer.attr("src", splashImage);
 
 		(function () {
 			for (var i = 0, len = guests.length; i < len; i++) {
