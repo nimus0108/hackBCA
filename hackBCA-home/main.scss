@@ -28,7 +28,7 @@ input:focus {
 }
 
 body {
-	border-left: 10px solid black;
+	border-left: 10px solid #2F2F2F;
 	margin: 0;
 	padding: 0;
 	width: 100vw;
@@ -280,7 +280,7 @@ figure {
 }
 
 .bg-black {
-	background-color: black;
+	background-color: #2F2F2F;
 }
 
 .icon {
@@ -358,7 +358,7 @@ figure {
 }
 
 .footer {
-	background-color: black;
+	background-color: #2F2F2F;
 	margin: 0;
 	color: white;
 	position: relative;
@@ -456,6 +456,46 @@ figure {
 	z-index: 1000;
 }
 
+.nav {
+	position: fixed;
+	z-index: 999;
+	width: 100vw;
+	height: 8vh;
+	display: flex;
+	justify-content: left;
+	padding-left: 5em;
+	background-color: #2F2F2F;
+	align-items: center;
+	font-size: 0.8rem;
+	ul {
+		display: flex;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		align-items: center;
+		li {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			color: white;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: inherit;
+			a {
+				text-decoration: none;
+				@include crossBrowser(transition,
+				all 0.4s ease-in-out);
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+	img {
+		width: 6vh;
+		height: 6vh;
+	}
+}
+
 
 /* Responsive */
 
@@ -465,6 +505,10 @@ figure {
 	}
 	#video {
 		width: 100%;
+	}
+	.nav {
+		padding-left: 1em;
+		font-size: 0.96rem;
 	}
 	.jumbo {
 		text-align: center;

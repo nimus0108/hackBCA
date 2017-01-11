@@ -23,7 +23,7 @@ input:focus {
   background-color: #000000; }
 
 body {
-  border-left: 10px solid black;
+  border-left: 10px solid #2F2F2F;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -215,7 +215,7 @@ figure {
   text-align: center; }
 
 .bg-black {
-  background-color: black; }
+  background-color: #2F2F2F; }
 
 .icon {
   margin: 0vw 2vw 0vw 0vw; }
@@ -308,7 +308,7 @@ figure {
   width: 100%; }
 
 .footer {
-  background-color: black;
+  background-color: #2F2F2F;
   margin: 0;
   color: white;
   position: relative;
@@ -401,6 +401,41 @@ figure {
   width: 15%;
   z-index: 1000; }
 
+.nav {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: left;
+  padding-left: 5em;
+  background-color: #2F2F2F;
+  align-items: center;
+  font-size: 0.8rem; }
+  .nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center; }
+    .nav ul li {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: inherit; }
+      .nav ul li a {
+        text-decoration: none;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out; }
+        .nav ul li a:hover {
+          opacity: 0.7; }
+  .nav img {
+    width: 6vh;
+    height: 6vh; }
+
 /* Responsive */
 /* 1000px */
 @media screen and (max-width: 1000px) {
@@ -409,6 +444,10 @@ figure {
 
   #video {
     width: 100%; }
+
+  .nav {
+    padding-left: 1em;
+    font-size: 0.96rem; }
 
   .jumbo, .jumbo--fit {
     text-align: center; }
