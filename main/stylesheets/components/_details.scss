@@ -1,0 +1,155 @@
+.details {
+	width: 100%;
+	height: 100%;
+	padding: 4em 10%;
+	background-color: $color-white;
+
+	@include media(max-width 1000px) {
+		padding: 4em 2em;
+	}
+
+	@include media(max-width 650px) {
+		padding: 4em 1em;
+	}
+
+	h1 {
+		font-weight: 400;
+		font-size: 3em;
+		color: #2a2a2a;
+		margin-top: 6em;
+	}
+
+	.guests {
+		width: 100%;
+		height: 100%;
+		background-color: $color-white;
+		margin-top: 10em;
+		
+		img {
+			margin-bottom: 1em;
+
+			@include span-columns(3);
+			@include media(max-width 800px) {
+				@include span-columns(5);
+				margin: 1em 1em;
+			}
+			@include media(max-width 450px) {
+				@include span-columns(10);
+				margin: 2em 8%;
+			}
+		}
+	}
+
+	.sponsors {
+		text-align: center;
+
+		h1 {
+			font-size: 4em;
+			font-weight: 500;
+
+			@include media(max-width 800px) {
+				margin-top: 12em;
+				font-size: 3em;
+			}
+		}
+
+		h2 {
+			font-size: 3em;
+			font-weight: 400;
+			margin: 2em 0 0 0;
+
+			@include media(max-width 800px) {
+				font-size: 2em;
+			}
+		}
+		.row {
+			@include span-columns(12);
+		}
+
+		.row-3 {
+		display: flex;
+		align-items: center;
+		width: 100%; }
+
+		.row-3 img {
+		flex: 1;
+		width: calc(100% / 3);
+		height: 100%; }
+
+		.row-4 {
+		display: flex;
+		align-items: center;
+		width: 100%; }
+
+		.row-4 img {
+		flex: 1;
+		width: calc(100% / 4);
+		height: 100%; }
+
+		.row-5 {
+		display: flex;
+		align-items: center;
+		width: 100%; }
+
+		.row-5 img {
+		flex: 1;
+		width: calc(100% / 5);
+		height: 100%; }
+
+		.row-6 {
+		display: flex;
+		align-items: center;
+		width: 100%; }
+
+		.row-6 img {
+		flex: 1;
+		width: calc(100% / 6);
+		height: 100%; }
+
+		.jumbo, .jumbo--fit {
+		overflow: hidden; }
+		.jumbo #splash_img, .jumbo--fit #splash_img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		max-height: 110vh;
+		background-image: url("http://blogs.intel.com/evangelists/files/2015/04/IMG_5346.jpg");
+		background-size: cover;
+		transform: translate(-50%, -50%) scale(1.2); }
+
+		.row-1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%; }
+
+		.row-1 img {
+		width: 50%;
+		height: 100%; }
+
+		.row-2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		width: 100%; }
+
+		.row-2 img {
+		width: 25%;
+		height: 100%; }
+
+		[class^="row"] img {
+		padding: 2vw; }
+
+		.flex-column {
+		flex: 1;
+		width: 100%;
+		display: flex;
+		flex-direction: column; }
+
+		.flex-column img {
+		width: 100%; }
+
+	}
+}

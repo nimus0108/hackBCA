@@ -1,0 +1,84 @@
+.in {
+	background-color: $color-black;
+	text-align: center;
+	color: $color-white;
+	height: 100%;	
+	padding: 7em 0;
+	background-color: $color-black;
+
+	h1 {
+		font-size: 4em;
+		font-weight: 100;
+		margin: 0;
+	}
+
+	.text {
+		width: 30em;
+		height: 3em;
+		border: 1px solid $color-white;
+		padding: 0 0.5em;
+		margin: 0.5em 0;
+
+		@include media(max-width 650px) {
+			width: 90%;
+		}
+	}
+
+	.button {
+		width: 30em;
+		height: 3em;
+		color: $color-white;
+		background: none;
+		border: 1px solid $color-white;
+		margin: 0.5em 0;
+
+		@include media(max-width 650px) {
+			width: 90%;
+		}
+
+		&:hover {
+			background-color: $color-green;
+			border: 1px solid $color-green;
+			@include transition(all 0.8s);
+			opacity: 1;
+			cursor: pointer;
+		}
+	}
+
+	.ta {
+		text-align: center;
+		textarea {
+			width: 30em;
+			height: 10em;
+
+			@include media(max-width 650px) {
+				width: 90%;
+			}
+		}
+	}
+}
+
+.login {
+	height: 100vh;
+	padding: 15em 0;
+	
+	.text {
+		width: 23em;
+		
+		@include media(max-width 600px) {
+			width: 90%;
+		}
+	}
+
+	.button {
+		width: 23em;
+
+		@include media(max-width 600px) {
+			width: 90%;
+		}
+	}
+}
+
+.register {
+	padding: 14em 0;
+}

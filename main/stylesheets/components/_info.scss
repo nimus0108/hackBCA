@@ -1,0 +1,51 @@
+.info {
+	width: 100%;
+	padding: 4em 7%;
+	background-color: $color-white;
+
+	@include media(max-width 1000px) {
+		padding: 4em 2em;
+	}
+
+	@include media(max-width 650px) {
+		padding: 4em 1em;
+	}
+
+	.info-1 {
+		@include span-columns(6);
+		padding: 0 3em;
+
+		h1 {
+			font-weight: 100;
+			color: #2a2a2a;
+		}
+		h2 {
+			font-size: 1em;
+			font-weight: 100;
+			color: #999999;
+			line-height: 2;
+
+			@include media(max-width 650px) {
+				line-height: 1.8;
+			}
+		}
+
+		@include media(max-width 850px) {
+			@include span-columns(12);
+		}
+	}
+
+	.info-2 {
+ 		@include span-columns(6);
+		padding-bottom: 4em;
+		
+		@include media(max-width 850px) {
+			@include span-columns(12);
+			padding: 2em 4em 4em 4em;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
