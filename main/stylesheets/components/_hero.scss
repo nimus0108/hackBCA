@@ -57,7 +57,7 @@ body {
 	height: 100vh;
 	color: $color-white;
 	text-align: center;
-	padding-top: 17em;
+	padding-top: 20%;
 	background: url("../assets/images/bg.png");
 
 	h1 {
@@ -67,6 +67,7 @@ body {
 
 		@include media(max-width 700px) {
 			font-size: 3em;
+			padding-top: 1em;
 		}
 	}
 

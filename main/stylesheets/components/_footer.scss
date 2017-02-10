@@ -1,0 +1,54 @@
+.footer {
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1em 5em 4em 5em;
+	margin-top: 20%;
+	background-color: $color-black;
+	color: $color-white;
+	text-align: left;
+
+	h1 {
+		font-weight: 100;
+		font-size: 3em;
+	}
+
+	h2 {
+		font-weight: 100;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	i {
+		color: $color-white;
+		font-size: 2em;
+		margin-right: 1em;
+
+		&:hover {
+			color: #cccccc;
+			@include transition-duration(0.2s);
+		}
+	}
+
+	.links {
+		margin-top: 2em;
+		margin-bottom: 1em;
+	}
+
+	small {
+		margin-top: 10em;
+	}
+}
+
+#mlh-trust-badge {
+	display: block;
+	max-width: 115px;
+	min-width: 60px;
+	position: absolute;
+	right: 60px;
+	top: 0;
+	width: 15%;
+	z-index: 1000;
+}

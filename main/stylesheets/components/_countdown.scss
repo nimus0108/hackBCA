@@ -1,12 +1,12 @@
 #countdown {
-	background-color: $color-black;
+	// background-color: $color-black;
 	.time {
 		padding: 2em 0;
 		font-family: Avenir;
 		@include span-columns(4);
 		// width: 33.3%;
-		color: $color-white;
-		background-color: $color-black;
+		color: $color-black;
+		// background-color: $color-black;
 		text-align: center;
 		margin: 0;
 
