@@ -776,6 +776,10 @@ body {
 .profile {
   background-color: #FFFFFF;
   color: #000000; }
+  .profile .nav a {
+    color: #4c4c4c; }
+    .profile .nav a:hover {
+      color: #000000; }
   .profile h1 {
     font-size: 4em;
     font-weight: 100;
