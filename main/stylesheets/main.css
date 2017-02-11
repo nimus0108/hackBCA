@@ -703,20 +703,20 @@ body {
   text-align: center;
   color: #FFFFFF;
   height: 100%;
-  padding: 20% 0;
+  padding: 10% 0;
   background-color: #000000; }
   .in h1 {
     font-size: 4em;
     font-weight: 100;
     margin: 0; }
-  .in input[type="text"], .in select {
+  .in .text {
     width: 30em;
     height: 3em;
     border: 1px solid #FFFFFF;
     padding: 0 0.5em;
     margin: 0.5em 0; }
     @media screen and (max-width: 650px) {
-      .in input[type="text"], .in select {
+      .in .text {
         width: 90%; } }
   .in .button {
     width: 30em;
@@ -748,10 +748,10 @@ body {
 .login {
   height: 100vh;
   padding: 15em 0; }
-  .login input[type="text"], .login select {
+  .login .text {
     width: 23em; }
     @media screen and (max-width: 600px) {
-      .login input[type="text"], .login select {
+      .login .text {
         width: 90%; } }
   .login .button {
     width: 23em; }
@@ -768,10 +768,28 @@ body {
 
 .apply {
   padding: 10% 0; }
+  @media screen and (max-width: 650px) {
+    .apply h1 {
+      font-size: 3em;
+      padding-top: 1em; } }
 
 .profile {
-  background-color: #FFFFFF; }
-  .profile .header {
+  background-color: #FFFFFF;
+  color: #000000; }
+  .profile h1 {
+    font-size: 4em;
+    font-weight: 100;
+    margin: 0; }
+    @media screen and (max-width: 700px) {
+      .profile h1 {
+        font-size: 3em;
+        padding-top: 1em; } }
+  .profile .text {
+    border: 2px solid #000000; }
+  .profile .button {
+    border: 2px solid #000000;
+    font-weight: 400;
+    color: #FFFFFF;
     background-color: #000000; }
 
 .footer {

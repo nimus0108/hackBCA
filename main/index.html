@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Title</title>
+		<title>hackBCA</title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
-
+		<link rel="icon" href="assets/brand/logo.png">
 		<script src="js/app.js"></script>
 		<script src="https://use.typekit.net/cdh1lxe.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -157,6 +157,22 @@
 		        });
 		    });
 		})(jQuery);
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 80
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
 		</script>
 	</body>
 </html>
