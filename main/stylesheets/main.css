@@ -548,18 +548,23 @@ body {
       line-height: 1;
       text-align: center;
       text-shadow: 1px 1px 5px #FFFFFF; }
+      @media screen and (max-width: 700px) {
+        #countdown .time h2 {
+          font-size: 4em; } }
     #countdown .time h3 {
       margin: 0;
       padding: 0;
       font-size: 2em;
       font-weight: 500;
       text-align: center; }
+      @media screen and (max-width: 700px) {
+        #countdown .time h3 {
+          font-size: 1.5em; } }
 
 .details {
   width: 100%;
   height: 100%;
-  padding: 15em 10%;
-  background-color: #FFFFFF; }
+  padding: 15em 10%; }
   @media screen and (max-width: 1000px) {
     .details {
       padding: 4em 2em; } }
@@ -577,7 +582,11 @@ body {
     margin-top: 2em;
     font-weight: 500; }
   .details .faq h3 {
-    font-weight: 100; }
+    font-weight: 100;
+    color: #444; }
+    @media screen and (max-width: 700px) {
+      .details .faq h3 {
+        font-size: 1em; } }
   .details .faq .important {
     font-weight: 600; }
   .details .guests {
