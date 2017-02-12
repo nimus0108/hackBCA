@@ -1,9 +1,13 @@
 // BASE
 body {
-	font-family: $font-primary;
+	font-family: 'azo-sans-web', 'Atlas Grotesk';
 	font-size: $font-size-body;
 	color: $color-text;
 
 	margin: 0;
 	padding: 0;
+
+	@include media(max-width 700px) {
+		border: none;
+	}
 }
